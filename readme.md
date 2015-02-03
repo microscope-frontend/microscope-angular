@@ -1,7 +1,7 @@
 microscope-angular
 ==================
 
-AngularJS (CommonJS/ browserify) project template for microscopejs cli generator with browserify and complete grunt build system
+AngularJS (CommonJS/ Browserify) project template with browserify and grunt build system.
 
 ![microscopejs](http://microscopejs.com/images/mcsp_bg.png)
 
