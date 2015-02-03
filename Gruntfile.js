@@ -10,7 +10,7 @@ var copy       = require('./grunt/copy');
 var clean      = require('./grunt/clean');
 
 module.exports = function (grunt) {
-   
+
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         jshint: jshint,
@@ -34,9 +34,9 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
 
     // Register task(s).
-    grunt.registerTask('default', ['debug']);
+    grunt.registerTask('default', ['serve']);
     grunt.registerTask('test', ['jshint']);
-    grunt.registerTask('build', ['clean', 'copy', 'browserify']);
+    grunt.registerTask('build', ['clean', 'copy:assets', 'copy:templates', 'browserify']);
     grunt.registerTask('serve', ['build', 'concurrent:debug']);
-    grunt.registerTask('release', ['build', 'uglify']);
+    grunt.registerTask('release', ['jshint', 'build', 'uglify']);
 };

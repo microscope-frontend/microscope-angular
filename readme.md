@@ -3,6 +3,8 @@ microscope-angular
 
 AngularJS (CommonJS/ browserify) project template for microscopejs cli generator with browserify and complete grunt build system
 
+![microscopejs](http://microscopejs.com/images/mcsp_bg.png)
+
 Requirements
 ------------
 
@@ -55,8 +57,8 @@ Commands
 #### build:
 
 	grunt build
-	
-* validate source code (jsHint).
+
+* clean build directory.
 * copy assets & templates in build directory.
 * compile scripts source files to bundle.
 
@@ -65,6 +67,7 @@ Commands
 	grunt release
 	
 * validate source code (jsHint).
+* clean build directory.
 * copy assets & templates in build directory.
 * compile scripts source files to bundle.
 * uglify bundle.
@@ -79,8 +82,9 @@ Commands
 
 	grunt serve
 	
-* validate source code (jsHint).
+* clean build directory.
 * copy assets & templates in build directory.
 * compile scripts source files to bundle.
 * run local server with build directory as root .
 * open default browser.
+* Watch for changes in source files (scripts & assets).

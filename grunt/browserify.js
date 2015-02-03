@@ -1,7 +1,7 @@
 module.exports = {
     dist: {
         files: {
-            'build/bundle.js': ['src/scripts/app.js'],
+            'build/bundle.js': ['src/app.js'],
         }
     }
 };

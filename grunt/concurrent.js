@@ -1,6 +1,6 @@
 module.exports = {
     debug: {
-    	tasks: ['watch', 'connect'],
+    	tasks: ['watch:assets', 'watch:sources', 'connect'],
 		options: {
 			logConcurrentOutput: true
 		}

@@ -1,7 +1,15 @@
 module.exports = {
-	files: [ "src/**/*"],
-	tasks: [ 'build' ],
-	options: {
-		livereload: 35729
+
+	sources: {
+		files: [ "src/**/*"],
+		tasks: [ 'copy:templates', 'browserify' ],
+		options: {
+			livereload: 35729
+		}
+	},
+
+	assets: {
+		files: [ "assets/**/*"],
+		tasks: [ 'copy:assets' ],
 	}
 };

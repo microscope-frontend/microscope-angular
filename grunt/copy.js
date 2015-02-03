@@ -1,8 +1,14 @@
 module.exports = {
-    default: {
+	
+    assets: {
 		files: [
-	      {expand: true, cwd: 'assets/', src: ['**'], dest: 'build/'},
-	      {expand: true, cwd: 'src/templates', src: ['**'], dest: 'build/templates'}
+			{expand: true, cwd: 'assets/', src: ['**'], dest: 'build/'}
+	    ],
+    },
+
+    templates: {
+		files: [
+			{expand: true, cwd: 'src/', src: ['**/*.html'], dest: 'build/'}
 	    ],
     }
 };
