@@ -8,6 +8,7 @@ var connect    = require('./grunt/connect');
 var uglify     = require('./grunt/uglify');
 var copy       = require('./grunt/copy');
 var clean      = require('./grunt/clean');
+var docco      = require('./grunt/docco');
 
 module.exports = function (grunt) {
 
@@ -20,7 +21,8 @@ module.exports = function (grunt) {
 		connect: connect,
         uglify: uglify,
         copy: copy,
-        clean: clean
+        clean: clean,
+        docco: docco
     });
 
     // Load npm tasks.
@@ -32,6 +34,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-docco');
 
     // Register task(s).
     grunt.registerTask('default', ['serve']);
