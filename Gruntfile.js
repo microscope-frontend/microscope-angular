@@ -39,8 +39,8 @@ module.exports = function (grunt) {
     // Register task(s).
     grunt.registerTask('default', ['serve']);
     grunt.registerTask('test', ['jshint']);
-    grunt.registerTask('docs', ['docco']);
-    grunt.registerTask('build', ['clean', 'copy:assets', 'copy:templates', 'docco', 'browserify']);
-    grunt.registerTask('serve', ['build', 'concurrent:debug']);
+    grunt.registerTask('docs', ['docco:release']);
+    grunt.registerTask('build', ['clean', 'copy:assets', 'copy:templates', 'browserify']);
+    grunt.registerTask('serve', ['build', 'docco:dev', 'concurrent:debug']);
     grunt.registerTask('release', ['jshint', 'build', 'uglify']);
 };
