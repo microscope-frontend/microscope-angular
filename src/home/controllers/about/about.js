@@ -1,8 +1,6 @@
 'use strict';
 
-/**
- * AboutCtrl class
- */
+// AboutCtrl class
 function AboutCtrl () {
 	this.title = 'about';
 }

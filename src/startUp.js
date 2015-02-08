@@ -1,8 +1,6 @@
 'use strict';
 
-/**
- * Run app function
- */
+// Run app function
 function StartUp() {
 
 }

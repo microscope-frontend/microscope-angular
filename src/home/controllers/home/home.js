@@ -1,8 +1,6 @@
 'use strict';
 
-/**
- * HomeCtrl class
- */
+// HomeCtrl class
 function HomeCtrl () {
 	this.title = 'home';
 }

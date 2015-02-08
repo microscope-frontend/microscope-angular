@@ -1,3 +1,4 @@
 module.exports = {
-    default: ["build/"]
+    build: ['build/'],
+    docs: ['docs/']
 };

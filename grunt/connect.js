@@ -1,5 +1,5 @@
 module.exports = {
-    server: {
+    build: {
         options: {
           open: {
             target: 'http://localhost:3000'
@@ -7,6 +7,16 @@ module.exports = {
           keepalive: true,
           port: 3000,
           base: 'build'
+        }
+    },
+    docs: {
+        options: {
+          open: {
+            target: 'http://localhost:3000/app.html'
+          },
+          keepalive: true,
+          port: 3000,
+          base: 'docs'
         }
     }
 };

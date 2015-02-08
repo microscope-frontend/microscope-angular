@@ -1,8 +1,6 @@
 'use strict';
 
-/**
- * Router class
- */
+// Router class
 function Router($routeProvider) {
 
 	$routeProvider
