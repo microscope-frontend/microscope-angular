@@ -1,3 +1,5 @@
+var stylish = require('jshint-stylish');
+
 module.exports = {
 
     options: {
@@ -23,7 +25,9 @@ module.exports = {
 
         globals: {
             "console": true
-        }
+        },
+
+        reporter: stylish
     },
 
     all: ['src/**/*.js']
