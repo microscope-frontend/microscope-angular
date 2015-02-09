@@ -78,6 +78,14 @@ Commands
 	
 * validate source code (jsHint).
 
+#### docs:
+
+	grunt docs
+	
+* generate annoted code documentation (docco).
+* run local server with generated 'docs/' directory as root.
+* open default browser.
+
 #### serve:
 
 	grunt serve
@@ -85,6 +93,6 @@ Commands
 * clean build directory.
 * copy assets & templates in build directory.
 * compile scripts source files to bundle.
-* run local server with build directory as root .
+* run local server with generated 'build/' directory as root.
 * open default browser.
 * Watch for changes in source files (scripts & assets).
