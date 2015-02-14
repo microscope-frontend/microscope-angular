@@ -96,3 +96,9 @@ Commands
 * run local server with generated 'build/' directory as root.
 * open default browser.
 * Watch for changes in source files (scripts & assets).
+
+Roadmap
+=======
+
+* fix livereload
+* sourcemap
