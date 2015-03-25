@@ -36543,36 +36543,42 @@ return jQuery;
 },{}],6:[function(require,module,exports){
 'use strict';
 
-// AboutCtrl class
-function AboutCtrl () {
-	this.title = 'about';
-}
-
-module.exports = AboutCtrl;
-},{}],7:[function(require,module,exports){
-'use strict';
-
 // HomeCtrl class
 function HomeCtrl () {
 	this.title = 'home';
 }
 
 module.exports = HomeCtrl;
+},{}],7:[function(require,module,exports){
+'use strict';
+
+// WelcomeCtrl class
+function WelcomeCtrl () {
+	this.firstname = "";
+	this.lastname = "";
+}
+
+WelcomeCtrl.prototype.welcome = function() {
+	alert('welcome ' + this.firstname + ' ' + this.lastname + ' !!!');
+};
+
+
+module.exports = WelcomeCtrl;
 },{}],8:[function(require,module,exports){
 'use strict';
 
 // Imports
 var angular = require('angular');
 var HomeCtrl  = require('./controllers/home/homeCtrl');
-var AboutCtrl = require('./controllers/about/aboutCtrl');
+var WelcomeCtrl = require('./controllers/welcome/welcomeCtrl');
 
 // Home sub-module definition
 var home = angular.module('riaangular.home', []);
 home.controller('HomeCtrl', [HomeCtrl]);
-home.controller('AboutCtrl', [AboutCtrl]);
+home.controller('WelcomeCtrl', [WelcomeCtrl]);
 
 module.exports = home;
-},{"./controllers/about/aboutCtrl":6,"./controllers/home/homeCtrl":7,"angular":4}],9:[function(require,module,exports){
+},{"./controllers/home/homeCtrl":6,"./controllers/welcome/welcomeCtrl":7,"angular":4}],9:[function(require,module,exports){
 'use strict';
 
 // Router class
@@ -36584,8 +36590,8 @@ function Router($routeProvider) {
 		templateUrl: '/home/controllers/home/home.html'
 	})
 
-	.when('/about', {
-		templateUrl: '/home/controllers/about/about.html'
+	.when('/welcome', {
+		templateUrl: '/home/controllers/welcome/welcome.html'
 	})
 
 	.otherwise({ redirectTo: '/' });

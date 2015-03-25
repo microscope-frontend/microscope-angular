@@ -9,8 +9,8 @@ function Router($routeProvider) {
 		templateUrl: '/home/controllers/home/home.html'
 	})
 
-	.when('/about', {
-		templateUrl: '/home/controllers/about/about.html'
+	.when('/welcome', {
+		templateUrl: '/home/controllers/welcome/welcome.html'
 	})
 
 	.otherwise({ redirectTo: '/' });

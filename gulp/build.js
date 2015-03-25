@@ -43,7 +43,8 @@ gulp.task('browserify:release', function(cb){
 // watch files and run appropriate tasks
 gulp.task('watch', function () {
     gulp.watch(['./assets/**'], ['assets']);
-    gulp.watch(['./src/**'], ['browserify']);
+    gulp.watch(['./src/**/*.js'], ['browserify']);
+    gulp.watch(['./src/**/*.html'], ['templates']);
 });
 
 // assets tasks

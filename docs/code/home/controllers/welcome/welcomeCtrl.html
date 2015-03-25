@@ -2,7 +2,7 @@
 
 <html>
 <head>
-  <title>aboutCtrl.js</title>
+  <title>welcomeCtrl.js</title>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
   <link rel="stylesheet" media="all" href="..\..\..\docco.css" />
@@ -15,7 +15,7 @@
         
           <li id="title">
               <div class="annotation">
-                  <h1>aboutCtrl.js</h1>
+                  <h1>welcomeCtrl.js</h1>
               </div>
           </li>
         
@@ -41,15 +41,21 @@
               <div class="pilwrap ">
                 <a class="pilcrow" href="#section-2">&#182;</a>
               </div>
-              <p>AboutCtrl class</p>
+              <p>WelcomeCtrl class</p>
 
             </div>
             
-            <div class="content"><div class='highlight'><pre><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">AboutCtrl</span> <span class="hljs-params">()</span> </span>{
-	<span class="hljs-keyword">this</span>.title = <span class="hljs-string">'about'</span>;
+            <div class="content"><div class='highlight'><pre><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">WelcomeCtrl</span> <span class="hljs-params">()</span> </span>{
+	<span class="hljs-keyword">this</span>.firstname = <span class="hljs-string">""</span>;
+	<span class="hljs-keyword">this</span>.lastname = <span class="hljs-string">""</span>;
 }
 
-<span class="hljs-built_in">module</span>.exports = AboutCtrl;</pre></div></div>
+WelcomeCtrl.prototype.welcome = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+	alert(<span class="hljs-string">'welcome '</span> + <span class="hljs-keyword">this</span>.firstname + <span class="hljs-string">' '</span> + <span class="hljs-keyword">this</span>.lastname + <span class="hljs-string">' !!!'</span>);
+};
+
+
+<span class="hljs-built_in">module</span>.exports = WelcomeCtrl;</pre></div></div>
             
         </li>
         
