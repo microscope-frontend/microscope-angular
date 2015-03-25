@@ -46,7 +46,7 @@ Installation
 Commands
 --------
 
-#### start (run gulp serve):
+#### display microscope-console workflow form:
 
 	npm start
 
