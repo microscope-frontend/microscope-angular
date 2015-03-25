@@ -1,7 +1,7 @@
 microscope-angular
 ==================
 
-AngularJS (CommonJS/ Browserify) project template with browserify and grunt build system.
+AngularJS (CommonJS/ Browserify) starter kit.
 
 ![microscopejs](http://microscopejs.com/images/mcsp_bg.png)
 
@@ -35,28 +35,28 @@ Using homebrew:
 Installation
 ------------
 
-#### install grunt-cli (sudo on linux/OSX) :
+#### install global gulp (sudo on linux/OSX) :
 
-	npm install grunt-cli
+	npm install gulp
 
-#### install dependencies (sudo on linux/OSX) :
+#### install local dependencies (sudo on linux/OSX) :
 
 	npm install
 
 Commands
 --------
 
-#### start (run grunt serve):
+#### start (run gulp serve):
 
 	npm start
 
-#### test (run grunt test):
+#### test (run gulp test):
 
 	npm test
 
 #### build:
 
-	grunt build
+	gulp build
 
 * clean build directory.
 * copy assets & templates in build directory.
@@ -64,7 +64,7 @@ Commands
 
 #### release:
 
-	grunt release
+	gulp release
 	
 * validate source code (jsHint).
 * clean build directory.
@@ -74,17 +74,15 @@ Commands
 
 #### test:
 
-	grunt test
+	gulp test
 	
 * validate source code (jsHint).
 
 #### docs:
 
-	grunt docs
+	gulp docs
 	
 * generate annoted code documentation (docco).
-* run local server with generated 'docs/' directory as root.
-* open default browser.
 
 #### serve:
 
@@ -94,7 +92,6 @@ Commands
 * copy assets & templates in build directory.
 * compile scripts source files to bundle.
 * run local server with generated 'build/' directory as root.
-* open default browser.
 * Watch for changes in source files (scripts & assets).
 
 Roadmap
