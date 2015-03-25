@@ -1,7 +1,6 @@
 var gulp     = require('gulp');
 var Form     = require('microscope-console').Form;
 var GulpForm = require('./GulpForm');
-var GitForm  = require('./GitForm');
 
 var WorkflowForm = Form.extend({
 
@@ -12,7 +11,7 @@ var WorkflowForm = Form.extend({
             type: 'list',
             name: 'tool',
             message: 'What would you like to use ?',
-            choices: [ 'Gulp', 'Git' ]
+            choices: [ 'Gulp', 'exit' ]
         }];
 
         this.render();
@@ -22,7 +21,7 @@ var WorkflowForm = Form.extend({
         if(answer.tool == 'Gulp'){
             new GulpForm(this.cb);
         }else {
-            new GitForm(this.cb);
+            this.cb();
         }
     }
 });
