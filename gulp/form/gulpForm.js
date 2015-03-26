@@ -3,6 +3,8 @@ var gulp = require('gulp');
 
 var GulpForm = Form.extend({
 
+    banner: 'GULP TASKS',
+
     initialize: function (gulpCallback) {
         this.cb = gulpCallback;
 

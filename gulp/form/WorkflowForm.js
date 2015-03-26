@@ -4,6 +4,8 @@ var GulpForm = require('./GulpForm');
 
 var WorkflowForm = Form.extend({
 
+    banner: 'WORKFLOW',
+
     initialize: function (cb) {
         this.cb = cb;
 
