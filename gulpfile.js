@@ -1,4 +1,4 @@
-var gulp     = require('gulp');
+var gulp         = require('gulp');
 var WorkflowForm = require('./gulp/form/WorkflowForm');
 require('./gulp/build');
 require('./gulp/serve');
