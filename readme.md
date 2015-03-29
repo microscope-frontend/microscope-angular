@@ -3,6 +3,8 @@ microscope-angular
 
 AngularJS (CommonJS/ Browserify) starter kit.
 
+[![Build Status](https://travis-ci.org/bhtz/microscope-angular.svg?branch=master)](https://travis-ci.org/bhtz/microscope-angular)
+
 ![microscopejs](http://microscopejs.com/images/mcsp_bg.png)
 
 Requirements
@@ -97,6 +99,5 @@ Commands
 Roadmap
 =======
 
-* enable travis ci build
 * fix livereload
 * sourcemap
