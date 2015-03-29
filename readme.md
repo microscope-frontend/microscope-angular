@@ -97,5 +97,6 @@ Commands
 Roadmap
 =======
 
+* enable travis ci build
 * fix livereload
 * sourcemap
