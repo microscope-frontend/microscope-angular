@@ -1,6 +1,7 @@
 var Form = require('microscope-console').Form;
 var gulp = require('gulp');
 
+// Gulp tasks form
 var GulpForm = Form.extend({
 
     banner: 'GULP TASKS',
