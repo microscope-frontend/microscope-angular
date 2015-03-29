@@ -1,6 +1,6 @@
-var gulp     = require('gulp');
-var Form     = require('microscope-console').Form;
-var GulpForm = require('./GulpForm');
+var gulp         = require('gulp');
+var Form         = require('microscope-console').Form;
+var GulpTaskForm = require('./GulpTaskForm');
 
 var WorkflowForm = Form.extend({
 
@@ -21,7 +21,7 @@ var WorkflowForm = Form.extend({
 
     response: function (answer) {
         if(answer.tool == 'Gulp'){
-            new GulpForm(this.cb);
+            new GulpTaskForm(this.cb);
         }else {
             this.cb();
         }
