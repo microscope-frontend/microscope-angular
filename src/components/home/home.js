@@ -2,11 +2,11 @@
 
 // Imports
 var angular = require('angular');
-var HomeCtrl  = require('./controllers/home/homeCtrl');
-var WelcomeCtrl = require('./controllers/welcome/welcomeCtrl');
+var HomeCtrl  = require('./controllers/homeCtrl');
+var WelcomeCtrl = require('./controllers/welcomeCtrl');
 
 // Home sub-module definition
-var home = angular.module('riaangular.home', []);
+var home = angular.module('app.home', []);
 home.controller('HomeCtrl', [HomeCtrl]);
 home.controller('WelcomeCtrl', [WelcomeCtrl]);
 

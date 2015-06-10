@@ -6,11 +6,11 @@ function Router($routeProvider) {
 	$routeProvider
 
 	.when('/', {
-		templateUrl: '/home/controllers/home/home.html'
+		templateUrl: '/components/home/controllers/home.html'
 	})
 
 	.when('/welcome', {
-		templateUrl: '/home/controllers/welcome/welcome.html'
+		templateUrl: '/components/home/controllers/welcome.html'
 	})
 
 	.otherwise({ redirectTo: '/' });

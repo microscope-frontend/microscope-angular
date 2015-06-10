@@ -11,17 +11,17 @@ var Router  = require('./router');
 var StartUp = require('./startUp');
 
 // Application modules
-require('./home/home');
+require('./components/home/home');
 
 // Injection
-var app = angular.module('riaangular', [
+var app = angular.module('app', [
 	'ngRoute',
-	'riaangular.home'
+	'app.home'
 ]);
 
 app.config(['$routeProvider', Router]);
 app.run(StartUp);
-},{"./home/home":8,"./router":9,"./startUp":10,"angular":4,"angular-route":3,"jquery":5}],2:[function(require,module,exports){
+},{"./components/home/home":8,"./router":9,"./startUp":10,"angular":4,"angular-route":3,"jquery":5}],2:[function(require,module,exports){
 /**
  * @license AngularJS v1.3.15
  * (c) 2010-2014 Google, Inc. http://angularjs.org
@@ -36569,16 +36569,16 @@ module.exports = WelcomeCtrl;
 
 // Imports
 var angular = require('angular');
-var HomeCtrl  = require('./controllers/home/homeCtrl');
-var WelcomeCtrl = require('./controllers/welcome/welcomeCtrl');
+var HomeCtrl  = require('./controllers/homeCtrl');
+var WelcomeCtrl = require('./controllers/welcomeCtrl');
 
 // Home sub-module definition
-var home = angular.module('riaangular.home', []);
+var home = angular.module('app.home', []);
 home.controller('HomeCtrl', [HomeCtrl]);
 home.controller('WelcomeCtrl', [WelcomeCtrl]);
 
 module.exports = home;
-},{"./controllers/home/homeCtrl":6,"./controllers/welcome/welcomeCtrl":7,"angular":4}],9:[function(require,module,exports){
+},{"./controllers/homeCtrl":6,"./controllers/welcomeCtrl":7,"angular":4}],9:[function(require,module,exports){
 'use strict';
 
 // Router class
@@ -36587,11 +36587,11 @@ function Router($routeProvider) {
 	$routeProvider
 
 	.when('/', {
-		templateUrl: '/home/controllers/home/home.html'
+		templateUrl: '/components/home/controllers/home.html'
 	})
 
 	.when('/welcome', {
-		templateUrl: '/home/controllers/welcome/welcome.html'
+		templateUrl: '/components/home/controllers/welcome.html'
 	})
 
 	.otherwise({ redirectTo: '/' });

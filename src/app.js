@@ -10,12 +10,12 @@ var Router  = require('./router');
 var StartUp = require('./startUp');
 
 // Application modules
-require('./home/home');
+require('./components/home/home');
 
 // Injection
-var app = angular.module('riaangular', [
+var app = angular.module('app', [
 	'ngRoute',
-	'riaangular.home'
+	'app.home'
 ]);
 
 app.config(['$routeProvider', Router]);
