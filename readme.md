@@ -12,7 +12,7 @@ Requirements
 
 * node
 * npm
-* grunt-cli
+* gulp
 
 Node.js installation
 --------------------
@@ -60,8 +60,8 @@ Commands
 
 	gulp build
 
-* clean build directory.
-* copy assets & templates in build directory.
+* clean www directory.
+* copy assets & templates in www directory.
 * compile scripts source files to bundle.
 
 #### release:
@@ -69,8 +69,8 @@ Commands
 	gulp release
 	
 * validate source code (jsHint).
-* clean build directory.
-* copy assets & templates in build directory.
+* clean www directory.
+* copy assets & templates in www directory.
 * compile scripts source files to bundle.
 * uglify bundle.
 
@@ -88,16 +88,15 @@ Commands
 
 #### serve:
 
-	grunt serve
+	gulp serve
 	
-* clean build directory.
-* copy assets & templates in build directory.
+* clean www directory.
+* copy assets & templates in www directory.
 * compile scripts source files to bundle.
-* run local server with generated 'build/' directory as root.
+* run local server with generated 'www/' directory as root.
 * Watch for changes in source files (scripts & assets).
 
 Roadmap
 =======
 
 * fix livereload
-* sourcemap
