@@ -5,7 +5,7 @@ var runSequence = require('run-sequence');
 // run connect server
 gulp.task('connect', function() {
 	connect.server({
-		root: 'build',
+		root: 'www',
 		port: 3000,
 		livereload: true
 	});

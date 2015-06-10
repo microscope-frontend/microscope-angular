@@ -19,10 +19,12 @@ gulp.task('release', function (cb) {
 // build src
 gulp.task('browserify', function(cb){
 	
- 	return browserify('./src/app.js')
+ 	return browserify('./src/app.js', {
+             debug: true
+         })
         .bundle()
         .pipe(source('bundle.js'))
-        .pipe(gulp.dest('./build/'));
+        .pipe(gulp.dest('./www/'));
 
     cb();
 });
@@ -35,7 +37,7 @@ gulp.task('browserify:release', function(cb){
         .pipe(source('bundle.js'))
         .pipe(buffer())
         .pipe(uglify())
-        .pipe(gulp.dest('./build/'));
+        .pipe(gulp.dest('./www/'));
 
     cb();
 });
@@ -50,18 +52,18 @@ gulp.task('watch', function () {
 // assets tasks
 gulp.task('assets', function(cb){
     return gulp.src('./assets/**')
-        .pipe(gulp.dest('./build'));
+        .pipe(gulp.dest('./www'));
     cb();
 });
 
 // templates tasks
 gulp.task('templates', function(cb){
     return gulp.src('./src/**/*.html')
-        .pipe(gulp.dest('./build/'));
+        .pipe(gulp.dest('./www/'));
     cb();
 });
 
 // clean build folder task
 gulp.task('clean', function(cb){
-    del(['./build/'], {force: true}, cb);
+    del(['./www/'], {force: true}, cb);
 });
