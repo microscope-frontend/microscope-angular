@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "AngularJS (CommonJS/ Browserify) starter kit.",
   "scripts": {
-    "start": "gulp",
+    "start": "gulp serve",
     "test": "gulp test"
   },
   "author": "Benjamin Heintz",
@@ -41,7 +41,6 @@
     "gulp-jshint": "^1.9.2",
     "jshint-stylish": "^1.0.0",
     "gulp-uglify": "^1.1.0",
-    "microscope-console": "^0.9.0",
     "run-sequence": "^1.0.2",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.0.0"
