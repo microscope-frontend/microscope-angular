@@ -48,7 +48,7 @@ Installation
 Commands
 --------
 
-#### display microscope-console workflow form:
+#### serve local development server:
 
 	npm start
 
