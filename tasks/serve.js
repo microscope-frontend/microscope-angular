@@ -1,5 +1,6 @@
 var gulp        = require('gulp');
 var connect     = require('gulp-connect');
+var open        = require('gulp-open');
 var runSequence = require('run-sequence');
 
 // run connect server
@@ -11,7 +12,13 @@ gulp.task('connect', function() {
 	});
 });
 
+// open default browser
+gulp.task('open', function(){
+	gulp.src('')
+		.pipe(open({uri: 'http://localhost:3000'}));
+});
+
 // serve task => build & connect
 gulp.task('serve', function (cb) {
-	runSequence('clean', 'assets', 'templates', 'browserify', 'watch', 'connect');
+	runSequence('clean', 'assets', 'templates', 'browserify', 'watch', 'connect', 'open');
 });
