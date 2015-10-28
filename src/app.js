@@ -1,8 +1,9 @@
 'use strict';
 
 // Imports
-var angular = require('angular');
 require('jquery');
+var angular = require('angular');
+require('bootstrap');
 require('angular-route');
 
 // Application routing and startup
