@@ -1,7 +1,7 @@
 'use strict';
 
 // Imports
-require('jquery');
+window.jQuery = window.$ = require('jquery');
 var angular = require('angular');
 require('bootstrap');
 require('angular-route');
