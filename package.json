@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "AngularJS (CommonJS/ Browserify) starter kit.",
   "scripts": {
-    "start": "http-server ./www",
+    "start": "http-server ./www -s",
     "test": "gulp test"
   },
   "author": "Benjamin Heintz",
