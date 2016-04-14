@@ -34,6 +34,7 @@
     "angular": "angular"
   },
   "devDependencies": {
+    "browserify": "^13.0.0",
     "browserify-shim": "^3.8.2",
     "del": "^1.1.1",
     "gulp": "^3.8.11",
