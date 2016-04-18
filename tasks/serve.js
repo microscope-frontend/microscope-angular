@@ -14,11 +14,11 @@ gulp.task('connect', function() {
 
 // open default browser
 gulp.task('open', function(){
-	gulp.src('')
+	return gulp.src('')
 		.pipe(open({uri: 'http://localhost:3000'}));
 });
 
 // serve task => build & connect
 gulp.task('serve', function (cb) {
-	runSequence('clean', 'assets', 'templates', 'browserify', 'watch', 'connect', 'open');
+	runSequence('clean', 'assets', 'templates', 'browserify', 'watch', 'connect', 'open',cb);
 });
