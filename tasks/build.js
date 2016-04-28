@@ -62,5 +62,7 @@ gulp.task('templates', function(){
 
 // clean build folder task
 gulp.task('clean', function(cb){
-    del(['./www/'], {force: true}, cb);
+    del(['./www/']).then(function(){
+	    cb();
+    });
 });
