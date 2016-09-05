@@ -1,6 +1,6 @@
-image: node0.10
+image: node0.12
 
 script:
   - npm install -g gulp
   - npm -s install
-  - npm test
+  - npm run lint

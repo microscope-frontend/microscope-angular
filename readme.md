@@ -9,97 +9,66 @@ AngularJS (CommonJS/ Browserify) starter kit.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/microscope-frontend/microscope-angular)
 
+
 Requirements
 ------------
 
-* node
 * npm
 * gulp
-
-Node.js installation
---------------------
-
-#### Install on OSX
-
-Using homebrew:
-
-	brew install node
-
-#### Install on Linux (Ubuntu/Mint)
-
-	sudo apt-get install python-software-properties python g++ make
-	sudo add-apt-repository ppa:chris-lea/node.js
-	sudo apt-get update
-	sudo apt-get install nodejs
-
-#### Install on Windows
-
-[Download Node.js MSI](http://nodejs.org/download/)
+* nodejs
+* protractor
+* mocha
 
 Installation
 ------------
 
-#### install global gulp (sudo on linux/OSX) :
+Install node.js:
 
-	npm install gulp
+[Download Node.js](http://nodejs.org/download/)
 
-#### install local dependencies (sudo on linux/OSX) :
+Install project dependencies:
 
 	npm install
+	
+Install gulp (task runner):
 
+	npm install gulp -g
+
+Install selenium-standalone & protractor (test framework):
+
+	npm install protractor -g
+
+Update webdrivers:
+
+	webdriver-manager update
+
+Install mocha (test runner):
+
+	npm install mocha -g
+	
 Commands
 --------
 
-#### serve local development server:
+Run web application:
 
 	npm start
 
-#### test (run gulp test):
+Run web application in development mode:
 
-	npm test
+	npm run serve
 
-#### build:
+Run end to end tests:
 
-	gulp build
+	npm run test
 
-* clean www directory.
-* copy assets & templates in www directory.
-* compile scripts source files to bundle.
+Run source code validation:
 
-#### release:
+	npm run lint
 
-	gulp release
-	
-* validate source code (jsHint).
-* clean www directory.
-* copy assets & templates in www directory.
-* compile scripts source files to bundle.
-* uglify bundle.
+Build web application:
 
-#### test:
+	npm run build
 
-	gulp test
-	
-* validate source code (jsHint).
+Release web application:
 
-#### docs:
-
-	gulp docs
-	
-* generate annoted code documentation (docco).
-
-#### serve:
-
-	gulp serve
-	
-* clean www directory.
-* copy assets & templates in www directory.
-* compile scripts source files to bundle.
-* run local server with generated 'www/' directory as root.
-* Watch for changes in source files (scripts & assets).
-
-Roadmap
-=======
-
-* fix livereload
-* test / build jenkins ok !
+	npm run release

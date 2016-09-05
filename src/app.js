@@ -3,7 +3,7 @@
 // Imports
 window.jQuery = window.$ = require('jquery');
 var angular = require('angular');
-require('bootstrap');
+require('bootstrap-sass');
 require('angular-route');
 
 // Application routing and startup
