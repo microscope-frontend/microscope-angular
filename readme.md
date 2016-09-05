@@ -3,7 +3,7 @@ microscope-angular
 
 AngularJS (CommonJS/ Browserify) starter kit.
 
-[![Build Status](https://travis-ci.org/bhtz/microscope-angular.svg?branch=master)](https://travis-ci.org/bhtz/microscope-angular)
+[![Build Status](https://travis-ci.org/microscope-frontend/microscope-angular.svg?branch=master)](https://travis-ci.org/microscope-frontend/microscope-angular)
 
 ![microscopejs](https://avatars0.githubusercontent.com/u/13710913?v=3&s=200)
 
